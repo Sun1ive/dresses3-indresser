@@ -1,16 +1,20 @@
 <template>
   <v-app light>
+    <!-- app toolbar -->
     <app-toolbar></app-toolbar>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <!-- app main -->
+    <app-main></app-main>
   </v-app>
 </template>
 
 <script>
 import toolbar from './components/toolbar'
+import main from './components/main'
 
   export default {
     components: {
-      'app-toolbar': toolbar
+      'app-toolbar': toolbar,
+      'app-main': main
     },
     data () {
       return {

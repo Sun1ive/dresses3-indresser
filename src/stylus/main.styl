@@ -1,13 +1,22 @@
 /** Stylus Styles */
 @import '../../node_modules/vuetify/src/stylus/main'
 
+//  variables
 $primary = #F5BA13
+
+
+// styles
+html
+  overflow-y: hidden
 
 .application--light .navigation-drawer
   background-color: $primary
 
 .application--light .toolbar
   background-color: $primary
+
+.application > main
+  flex-direction: column
 
 a
   text-decoration: none
