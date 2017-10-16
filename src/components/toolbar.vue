@@ -26,7 +26,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar>
+    <v-toolbar :fixed="isFixed">
       <v-toolbar-title @click="scrollTop"><img class="logo" src="/static/logo1.png" alt="logo"></v-toolbar-title>
       <v-spacer></v-spacer>
         <v-btn flat class="request hidden-xs-only">Получить весь каталог коллекции</v-btn>
@@ -54,6 +54,9 @@
     computed: {
       toolbarMenu () {
         return this.$store.state.menu
+      },
+      isFixed () {
+        return this.$store.state.fixed
       }
     }
   }

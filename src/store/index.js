@@ -56,8 +56,14 @@ export const store = new Vuex.Store({
         slider: ['/static/gallery/d16_2.jpg', '/static/gallery/d16_3.jpg', '/static/gallery/d16_4.jpg']
       },
     ],
+    // fixed: null
   },
-  getters: {},
-  mutations: {},
-  actions: {}
+  mutations: {
+/*     isFixed: state => {
+      state.fixed = true
+    },
+    notFixed: state => {
+      state.fixed = false
+    } */
+  }
 });

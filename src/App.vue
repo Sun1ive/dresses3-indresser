@@ -23,6 +23,22 @@ import footer from './components/footer'
     data () {
       return {
       }
+    },
+    methods: {
+      // fixed () {
+      //   let offset = window.pageYOffset
+      //   if (offset >= 250) {
+      //     this.$store.commit('isFixed')
+      //   } else {
+      //     this.$store.commit('notFixed')
+      //   }
+      // }
+    },
+    created () {
+      // window.addEventListener('scroll', this.fixed)
+    },
+    beforeDestroy () {
+      // window.removeEventListener('scroll', this.fixed)
     }
   }
 </script>
