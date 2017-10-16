@@ -3,8 +3,8 @@
     <v-layout justify-center align-center>
       <div class="backgroundText mb-4"><span>Получить свой заказ очень просто:</span></div>
     </v-layout>
-    <v-layout justify-center align-center>
-      <v-flex class="text-xs-center tt" xs12 sm6 lg3 v-for="(item, i) in terms" :key="i">
+    <v-layout justify-center align-center row wrap>
+      <v-flex class="text-xs-center tt" xs12 sm6 lg2 v-for="(item, i) in terms" :key="i">
         <div class="box">{{ item.position }}</div>
         <div class="pt-3">{{ item.title }}</div>
       </v-flex>
@@ -16,8 +16,8 @@
           <v-card-title>{{ item.title }}</v-card-title>
           <v-card-text>{{ item.price }} грн</v-card-text>
           <v-card-actions>
-            <v-btn class="ml-0">Заказать</v-btn>
             <v-btn class="ml-0">Подробно</v-btn>
+            <v-btn class="ml-0">Заказать</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -52,7 +52,7 @@
   justify-content center
   flex-direction column
   align-items center
-  font-size 2.3rem
+  font-size 2.1rem
   font-weight bold
   color #A7A7A7
 

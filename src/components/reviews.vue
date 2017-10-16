@@ -12,12 +12,6 @@
   </v-container>
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
-
 <style scoped lang="stylus">
 .layout
   position relative
@@ -27,12 +21,12 @@
   .backgroundText
     position absolute
     left 50%
-    top 50%
+    top 30%
     transform translate(-50%,-50%)
   
 .reviews
   background-color #fff
-  height 150px
+  height 200px
   position absolute
   width 100%
   bottom 0

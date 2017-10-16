@@ -1,6 +1,6 @@
 <template>
   <header>
-    <v-navigation-drawer right temporary v-model="drawer">
+    <v-navigation-drawer right temporary hide-overlay v-model="drawer">
       <v-list class="pa-1">
         <v-list-tile avatar class="text-xs-center">
           <img src="/static/logo1.png">

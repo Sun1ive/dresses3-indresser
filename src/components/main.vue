@@ -32,6 +32,10 @@
     <section class="collection">
       <app-collection></app-collection>
     </section>
+    <!-- special offer -->
+    <section class="special">
+      <app-special></app-special>
+    </section>
   </main>
 </template>
 
@@ -44,6 +48,7 @@ import video from './video'
 import request from './request'
 import comments from './comments'
 import collection from './collection'
+import special from './special'
 
 
   export default {
@@ -55,7 +60,8 @@ import collection from './collection'
       'app-video': video,
       'app-request': request,
       'app-comments': comments,
-      'app-collection': collection
+      'app-collection': collection,
+      'app-special': special
     }
   }
 </script>
