@@ -28,6 +28,10 @@
     <section class="comments">
       <app-comments></app-comments>
     </section>
+    <!-- collection -->
+    <section class="collection">
+      <app-collection></app-collection>
+    </section>
   </main>
 </template>
 
@@ -39,6 +43,7 @@ import reviews from './reviews'
 import video from './video'
 import request from './request'
 import comments from './comments'
+import collection from './collection'
 
 
   export default {
@@ -49,7 +54,8 @@ import comments from './comments'
       'app-reviews': reviews,
       'app-video': video,
       'app-request': request,
-      'app-comments': comments
+      'app-comments': comments,
+      'app-collection': collection
     }
   }
 </script>

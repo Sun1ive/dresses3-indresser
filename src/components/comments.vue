@@ -25,6 +25,7 @@
   position relative
   img
     width 100%
+    max-height 700px
 
 .avatar
   height 300px
