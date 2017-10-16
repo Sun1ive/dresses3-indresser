@@ -26,11 +26,14 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar>
-      <v-toolbar-title v-scroll-to="'.header'"><img class="logo" src="/static/logo1.png" alt="logo"></v-toolbar-title>
+    <v-toolbar fixed>
+      <v-toolbar-title @click="scrollTop"><img class="logo" src="/static/logo1.png" alt="logo"></v-toolbar-title>
       <v-spacer></v-spacer>
-        <v-btn flat class="request hidden-xs-only" @click.stop="requestConsult">Заказать звонок</v-btn>
+        <v-btn flat class="request hidden-xs-only">Получить весь каталог коллекции</v-btn>
       <v-spacer></v-spacer>
+       <v-icon medium class="red--text mx-2">call</v-icon><a href="tel:3336621">073-02-02-090</a>
+      <v-spacer></v-spacer>
+      <span>Меню</span>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
   </header>
@@ -40,7 +43,12 @@
   export default {
     data () {
       return {
-        drawer: null
+        drawer: null,
+      }
+    },
+    methods: {
+      scrollTop () {
+        window.scrollTo(0, 0)
       }
     },
     computed: {
@@ -52,5 +60,9 @@
 </script>
 
 <style scoped lang="stylus">
-
+.request
+  background-color red !important
+  color #fff !important
+  border-radius 6px
+  font-weight bold
 </style>

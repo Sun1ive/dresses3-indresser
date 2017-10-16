@@ -1,6 +1,7 @@
 <template>
   <v-app light>
     <app-toolbar></app-toolbar>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
   </v-app>
 </template>
 
@@ -17,3 +18,8 @@ import toolbar from './components/toolbar'
     }
   }
 </script>
+
+<style lang="stylus">
+body
+  font-family Arial, Helvetica, sans-serif
+</style>
