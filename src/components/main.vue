@@ -24,6 +24,10 @@
     <section class="request">
       <app-request></app-request>
     </section>
+    <!-- comments -->
+    <section class="comments">
+      <app-comments></app-comments>
+    </section>
   </main>
 </template>
 
@@ -34,6 +38,7 @@ import catalog from './catalog'
 import reviews from './reviews'
 import video from './video'
 import request from './request'
+import comments from './comments'
 
 
   export default {
@@ -43,7 +48,8 @@ import request from './request'
       'app-catalog': catalog,
       'app-reviews': reviews,
       'app-video': video,
-      'app-request': request
+      'app-request': request,
+      'app-comments': comments
     }
   }
 </script>
