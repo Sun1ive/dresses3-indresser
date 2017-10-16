@@ -3,6 +3,7 @@ import App from './App.vue'
 import Vuetify from 'vuetify'
 import './stylus/main.styl'
 import Scroll from 'vue-scrollto'
+import { store } from './store'
 
 Vue.use(Vuetify)
 Vue.use(Scroll, {
@@ -16,5 +17,6 @@ Vue.use(Scroll, {
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  store
 })

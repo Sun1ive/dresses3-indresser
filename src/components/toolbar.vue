@@ -8,7 +8,7 @@
       </v-list>
       <v-list class="pt-0">
         <v-divider></v-divider>
-        <v-list-tile v-for="item in toolbar" :key="item.title" @click="">
+        <v-list-tile v-for="item in toolbarMenu" :key="item.title" @click="">
           <v-list-tile-action>
             <v-icon medium class="red--text">{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -31,10 +31,7 @@
       <v-spacer></v-spacer>
         <v-btn flat class="request hidden-xs-only" @click.stop="requestConsult">Заказать звонок</v-btn>
       <v-spacer></v-spacer>
-      <v-toolbar-side-icon class="hidden-lg-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-items class="hidden-md-and-down" v-for="(item, i) in toolbar" :key="i">
-        <v-btn flat v-scroll-to="item.scroll" class="myBtn">{{ item.title }}</v-btn>
-      </v-toolbar-items>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
   </header>
 </template>
@@ -44,6 +41,11 @@
     data () {
       return {
         drawer: null
+      }
+    },
+    computed: {
+      toolbarMenu () {
+        return this.$store.state.menu
       }
     }
   }
