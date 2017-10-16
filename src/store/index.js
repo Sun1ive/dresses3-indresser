@@ -48,6 +48,13 @@ export const store = new Vuex.Store({
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremquenetur culpa, ad laboru',
         slider: ['/static/gallery/d16_2.jpg', '/static/gallery/d16_3.jpg', '/static/gallery/d16_4.jpg']
       },
+      {
+        title: 'платье 06',
+        img: '/static/gallery/d9_4.jpg',
+        price: 1234,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum. Laudantium nihil odit doloremquenetur culpa, ad laboru',
+        slider: ['/static/gallery/d16_2.jpg', '/static/gallery/d16_3.jpg', '/static/gallery/d16_4.jpg']
+      },
     ],
   },
   getters: {},
