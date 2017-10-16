@@ -4,8 +4,10 @@ import Vuetify from 'vuetify'
 import './stylus/main.styl'
 import Scroll from 'vue-scrollto'
 import { store } from './store'
+import Carousel from 'vue-carousel-3d'
 
 Vue.use(Vuetify)
+Vue.use(Carousel)
 Vue.use(Scroll, {
   container: 'body',
   duration: 500,
