@@ -16,6 +16,14 @@
     <section class="reviews">
       <app-reviews></app-reviews>
     </section>
+    <!-- video -->
+    <section class="video">
+      <app-video></app-video>
+    </section>
+    <!-- request -->
+    <section class="request">
+      <app-request></app-request>
+    </section>
   </main>
 </template>
 
@@ -24,6 +32,8 @@ import banner from './banner'
 import slider from './slider'
 import catalog from './catalog'
 import reviews from './reviews'
+import video from './video'
+import request from './request'
 
 
   export default {
@@ -31,7 +41,9 @@ import reviews from './reviews'
       'app-banner': banner,
       'app-slider': slider,
       'app-catalog': catalog,
-      'app-reviews': reviews
+      'app-reviews': reviews,
+      'app-video': video,
+      'app-request': request
     }
   }
 </script>

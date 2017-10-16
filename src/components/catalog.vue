@@ -6,7 +6,7 @@
           <div class="capital"><span>Получи каталог стильной коллекции</span></div>
           <div class="border"></div>
           <div class="text"><span>Мы предоставим Вам перечень дизайнерской одежды</span></div>
-          <v-form class="catalogForm text-xs-right">
+          <v-form class="form text-xs-right">
             <v-text-field label="Ваше имя"></v-text-field>
             <v-text-field label="Ваш телефон"></v-text-field>
             <v-text-field label="Ваш e-mail"></v-text-field>
@@ -25,16 +25,6 @@
 </script>
 
 <style scoped lang="stylus">
-.catalogForm
-  background-color #F1B415 !important
-  border-radius 6px
-  padding 1.5rem 2rem
-
-.myBtn
-  background-color red !important
-  color #fff
-  text-shadow 1px 1px 1px #333
-
 .capital
   font-weight bold
   font-size 1.5rem
