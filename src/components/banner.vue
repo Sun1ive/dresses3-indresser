@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-parallax src="/static/banner.png" height="600"></v-parallax>
+    <v-parallax src="/static/banner.png" height="700"></v-parallax>
   </v-container>
 </template>
 
