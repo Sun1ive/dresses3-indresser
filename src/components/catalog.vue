@@ -1,9 +1,11 @@
 <template>
   <v-container fluid>
-    <v-parallax src="/static/banner2.png" height="500">
+    <v-parallax src="/static/banner2.png" height="600">
       <v-layout align-center>
-        <v-flex xs12 sm6 lg4 class="text-xs-center">
-          <div class="capital">Получи каталог стильной коллекции</div>
+        <v-flex xs12 sm6 lg3 class="text-xs-center">
+          <div class="capital"><span>Получи каталог стильной коллекции</span></div>
+          <div class="border"></div>
+          <div class="text"><span>Мы предоставим Вам перечень дизайнерской одежды</span></div>
           <v-form class="catalogForm text-xs-right">
             <v-text-field label="Ваше имя"></v-text-field>
             <v-text-field label="Ваш телефон"></v-text-field>
@@ -24,7 +26,6 @@
 
 <style scoped lang="stylus">
 .catalogForm
-  // background-color red !important
   background-color #F1B415 !important
   border-radius 6px
   padding 1.5rem 2rem
@@ -36,5 +37,22 @@
 
 .capital
   font-weight bold
-  font-size 2rem
+  font-size 1.5rem
+  background-color #E8E7E7
+  box-shadow 0px 0px 5px 5px #E8E7E7
+  margin-bottom: 1rem
+  min-height 50px
+  display flex
+  justify-content center
+  align-items center
+  color #A7A7A7
+
+.border
+  border 1px dashed #A7A7A7
+  margin 1rem 0
+
+.text
+  color #A7A7A7
+  font-size 1.2rem
+  margin-bottom 2rem
 </style>

@@ -12,6 +12,10 @@
     <section class="catalog">
       <app-catalog></app-catalog>
     </section>
+    <!-- reviews -->
+    <section class="reviews">
+      <app-reviews></app-reviews>
+    </section>
   </main>
 </template>
 
@@ -19,15 +23,15 @@
 import banner from './banner'
 import slider from './slider'
 import catalog from './catalog'
-
-
+import reviews from './reviews'
 
 
   export default {
     components: {
       'app-banner': banner,
       'app-slider': slider,
-      'app-catalog': catalog
+      'app-catalog': catalog,
+      'app-reviews': reviews
     }
   }
 </script>
