@@ -59,11 +59,11 @@ export const store = new Vuex.Store({
     // fixed: null
   },
   mutations: {
-/*     isFixed: state => {
+    isFixed: state => {
       state.fixed = true
     },
     notFixed: state => {
       state.fixed = false
-    } */
+    }
   }
 });
