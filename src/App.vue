@@ -25,20 +25,20 @@ import footer from './components/footer'
       }
     },
     methods: {
-      // fixed () {
-      //   let offset = window.pageYOffset
-      //   if (offset >= 250) {
-      //     this.$store.commit('isFixed')
-      //   } else {
-      //     this.$store.commit('notFixed')
-      //   }
-      // }
+      fixed () {
+        let offset = window.pageYOffset
+        if (offset >= 250 && this.$store.state.fixed === false) {
+          this.$store.commit('isFixed')
+        } else if (offset < 250 && this.$store.state.fixed === true) {
+          this.$store.commit('notFixed')
+        }
+      }
     },
     created () {
-      // window.addEventListener('scroll', this.fixed)
+      window.addEventListener('scroll', this.fixed)
     },
     beforeDestroy () {
-      // window.removeEventListener('scroll', this.fixed)
+      window.removeEventListener('scroll', this.fixed)
     }
   }
 </script>
