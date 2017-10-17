@@ -50,20 +50,19 @@ import comments from './comments'
 import collection from './collection'
 import special from './special'
 
-
-  export default {
-    components: {
-      'app-banner': banner,
-      'app-slider': slider,
-      'app-catalog': catalog,
-      'app-reviews': reviews,
-      'app-video': video,
-      'app-request': request,
-      'app-comments': comments,
-      'app-collection': collection,
-      'app-special': special
-    }
+export default {
+  components: {
+    'app-banner': banner,
+    'app-slider': slider,
+    'app-catalog': catalog,
+    'app-reviews': reviews,
+    'app-video': video,
+    'app-request': request,
+    'app-comments': comments,
+    'app-collection': collection,
+    'app-special': special
   }
+}
 </script>
 
 <style scoped></style>

@@ -19,18 +19,13 @@
           </v-avatar>
         </v-flex>
         <v-flex xs12 sm6 lg4 class="text-xs-center">
-          <div class="content3">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены. Рекомендую и Вам убедиться в этом.</div>
+          <div class="content">Мы собрали команду молодых дизайнеров, которые предлагают нашим клиентам экслюзивную, модную, удобную, качественную одежду. А с учетом собственной реализации мы предлагаем отличные цены. Наши постоянные клиенты будут приятно удивлены. Рекомендую и Вам убедиться в этом.</div>
         </v-flex>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
 
 <style scoped lang="stylus">
 
@@ -46,7 +41,7 @@
   align-items center
   position relative
 
-.test
+/* .test
   position relative
   img
     width 100%
@@ -60,8 +55,8 @@
   position absolute
   top 50%
   left 15%
-  transform translate(0%, -50%)
-
+  transform translate(0%, -50%) */
+/* 
 .content2
   position absolute
   right 15%
@@ -71,9 +66,9 @@
   background-color #F3B020
   padding 1.5rem
   font-size 1.6rem
-  color #fff
+  color #fff */
 
-.content3
+.content
   background-color #F3B020
   padding 1.5rem
   font-size 1.6rem
